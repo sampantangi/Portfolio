@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name — Portfolio</title>
+    <meta name="description" content="Resume-based portfolio" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Sticky Top Navigation -->
+    <header class="topbar">
+      <div class="container">
+        <div class="brand">
+          <a href="#top" id="siteName" class="brand-link">Your Name</a>
+          <span id="siteRole" class="tagline">Full-Stack .NET Developer</span>
+        </div>
+        <nav class="nav" aria-label="Primary">
+          <button
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="menu"
+          >
+            Menu
+          </button>
+          <ul id="menu" class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a id="resumeLink" href="#" target="_blank" rel="noopener"
+                >Resume</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle Theme">
+          🌓
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 id="heroName">Your Name</h1>
+          <p id="heroTitle" class="subtitle">Full-Stack .NET Developer</p>
+          <p id="heroAbout" class="lead">
+            I enjoy creating performant web apps and APIs that solve real
+            problems.
+          </p>
+          <div class="hero-actions">
+            <a
+              id="resumeBtn"
+              href="#"
+              class="btn primary"
+              target="_blank"
+              rel="noopener"
+              >View Resume</a
+            >
+            <a href="#projects" class="btn">See Projects</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img id="profilePhoto" alt="Profile photo" src="Assets/photo.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <main id="main" class="main">
+      <section id="about" class="card">
+        <h2>About Me</h2>
+        <p id="aboutText">
+          I’m a developer focused on .NET, modern JS frameworks, and Azure.
+        </p>
+        <ul id="highlights" class="bullets"></ul>
+      </section>
+
+      <section id="experience" class="card">
+        <h2>Experience</h2>
+        <div id="experienceList" class="timeline"></div>
+      </section>
+
+      <section id="my-stack" class="card">
+        <h2>My Stack</h2>
+        <div id="techStack" class="chips"></div>
+      </section>
+
+      <section id="education" class="card">
+        <h2>Education</h2>
+        <div id="educationList"></div>
+      </section>
+
+      <section id="projects" class="card">
+        <h2>Projects</h2>
+        <div id="projectsGrid" class="grid"></div>
+      </section>
+
+      <section id="skills" class="card">
+        <h2>Skills</h2>
+        <div id="skillsChips" class="chips"></div>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p>Want to chat about a role or collaboration?</p>
+        <p>
+          <a id="emailLink" href="mailto:you@example.com" class="btn primary"
+            >Email Me</a
+          >
+        </p>
+        <p class="muted small">
+          © <span id="year"></span>
+          <span id="footerName">Samhitha Pantangi</span>
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">Built with plain HTML/CSS/JS.</div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
